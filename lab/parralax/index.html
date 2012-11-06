@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+    	<span id="logo">Logo goes here</span>
+    </header>
+
+    <section id="select">
+        <article>
+         
+         <h1>Welcome Christoph, please choose your account type</h1>   
+         <div id="types">
+	         <div class="type" id="typeArtist"><span class="icon"></span><span class="title">Artist</span><span class="description">Stream, Sell, and Promote the music you make</span><span class="select">Select</span></div>
+	         <div class="type" id="typeFan"><span class="icon"></span><span class="title">Fan</span><span class="description">Discover new music and events, share with your friends </span><span class="select">Select</span></div> 
+	         <div class="type" id="typeVenue"><span class="icon"></span><span class="title">Venue</span><span class="description">Book the bests acts in town, market your business to new patrons</span><span class="select">Select</span></div>  
+         </div>
+    </article>
+        <div class="parallax" data-velocity="-.3"></div>
+         <div class="parallax" data-velocity="-.5"  ></div>
+         <div class="parallax" data-velocity="-.8"  ></div>
+    </section>
+    
+    <section id="fan">
+        <article>
+        <h1>Fan</h1>   
+        <form action="">
+		<fieldset>
+		<legend>Personal information:</legend>
+		Name: <input type="text" size="30"><br>
+		E-mail: <input type="text" size="30"><br>
+		Date of birth: <input type="text" size="10">
+		</fieldset>
+		</form>
+
+        </article>
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity="-.5" data-fit="825"></div>
+
+    </section>
+    
+    <section id="artist">
+      <span class="up">up</span>
+        <article>
+      
+        <form action="">
+        <h1>Artist</h1>   
+		<fieldset>
+		<legend>Personal information:</legend>
+		Name: <input type="text" size="30"><br>
+		E-mail: <input type="text" size="30"><br>
+		Date of birth: <input type="text" size="10">
+		</fieldset>
+		</form>
+        </article>
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity="-.5" data-fit="525"></div>
+        <div class="parallax" data-velocity="-.5" data-fit="825"></div>
+    </section>
+    
+     <section id="artistTwo">
+        <span class="up">up</span>
+        <article>
+	        <form action="">
+	        <h1>Artist</h1>   
+			<fieldset>
+			<legend>Personal information:</legend>
+			Name: <input type="text" size="30"><br>
+			E-mail: <input type="text" size="30"><br>
+			Date of birth: <input type="text" size="10">
+			</fieldset>
+			</form>
+        </article>
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity="-.5" data-fit="1200"></div>
+    </section>
+    
+     <section id="venue">
+        <article>
+        <h1>Venue</h1>   
+        </article>
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity="-.5" data-fit="825"></div>
+    </section>
+
+    <footer>This is the footer</footer>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+<script src="jquery.scrolly.js"></script>
+<script>
+    $(document).ready(function(){
+
+       $('#select').animate({'background-position-x': '50%'})
+       $('.parallax').scrolly({bgParallax: true});
+
+       $('.up').click(function(){
+			$('html, body').animate({scrollTop:0}, 1200,  'easeOutCubic');
+		});
+   		$('#typeFan').click(function(){
+				$('html, body').animate({scrollTop:1200}, 'slow');
+				$('#artist,#venue').hide();
+				$('#fan').show();
+		});
+		
+		$('#typeArtist').click(function(){
+				$('html, body').animate({scrollTop:1200}, 1000,  'easeOutCubic');
+				$('#fan,#venue').hide();
+				$('#artist, #artistTwo').show();
+		});
+		
+		$('#typeVenue').click(function(){
+				$('html, bosdy').animate({scrollTop:1200}, 'slow');
+				$('#artist,#fan').hide();
+				$('#venue').show();
+		});	
+		
+		$(".type").each(function(index) {
+    $(this).delay(300*index).show().css("opacity","0").animate({marginTop: -20, opacity: 1}, 300,  'easeOutCubic');
+    });
+		
+		$('.type').hover(
+			function(){
+			$(this).stop().animate({ height: 260, marginTop: -30, backgroundColor: 'rgba(0,0,0,0.8)' }, 200, 'easeOutCubic');
+		
+			},
+			function(){
+			$(this).stop().animate( { height: 140,  marginTop: -20, backgroundColor: 'rgba(0,0,0,0.5)' }, 200, 'easeOutCubic' );	
+	
+	 });
+			
+		
+    });
+    
+    
+</script>
+</body>
+</html>

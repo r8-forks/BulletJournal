@@ -1,0 +1,144 @@
+/* Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+body{font:13px/1.1 Helvetica,sans-serif;}
+p{line-height:1.6;}
+/* Example page */
+
+strong{font-weight:bold;}
+
+section {
+	min-height: 1000px;
+    position: relative;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden!important;
+}
+
+#logo {position: absolute; z-index: 3; text-indent: -9999px; display: block; width: 300px; height: 62px; background: no-repeat center center url(../img/logo.png); padding: 50px; color: white; font-size: 23px; width: 100%}
+
+section:nth-of-type(1){background:whitesmoke;height:1200px;   z-index: 2;}
+section:nth-of-type(2){background:black;height:1600px;   z-index: 1;}
+
+#select>div:nth-of-type(1){
+    background: url(../img/stars.jpg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    bottom:0;left:0;    
+}
+
+#select>div:nth-of-type(2){
+    background: url(../img/1.png) 50% 10% no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%; 
+
+}
+
+#select>div:nth-of-type(3){
+    background: url(../img/lights.png) 50% 10% no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%; 
+
+}
+
+
+
+#fan>div:nth-of-type(1) {
+    background: url(../img/records.jpeg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    width:100%;
+    top:0;left:0;
+}
+
+#fan>div:nth-of-type(2) {
+    background: url(../img/2.png) 50% 0 no-repeat fixed;
+    margin:0;
+    height: 1600px;
+    position:absolute;
+    top:0;
+    left:100px;
+    width:100%
+}
+
+
+
+
+
+
+#artist>div:nth-of-type(1) {
+    background: url(../img/artistsBG.jpg) no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    bottom:0;left:0;
+    width: 100%;
+
+
+}
+
+#artist>div:nth-of-type(2) {
+    background: url(../img/2.png) 50% 50% no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%; 
+}
+
+#artist>div:nth-of-type(3) {
+    background: url(../img/dots.gif) repeat fixed;
+    margin: 0;
+    height: 1200px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%; 
+}
+
+
+
+#artistTwo>div:nth-of-type(1) {
+    background: url(../img/records.jpeg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    bottom:0;left:0;
+    width: 100%;
+
+
+}
+
+
+section h1{color:#fff; font-size:24px; margin:0 auto 80px auto; text-align: center; font-weight: 100; padding: 0;  padding: 0 0 20px 0; display: block; width: 100% }
+section p{color:black; width: 800px; color: white}
+section article{top:200px; left: 40px; width:100%;z-index:4; position: absolute}
+
+#fan, #artist, #artistTwo, #venue {display: none}
+
+.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}
+
+#types {width: 90%; margin: 0 auto; z-index: 5}
+
+.type {display: block; width: 28%; margin: 0 20px 0 20px;  background-color: rgba(0,0,0,0.5); float: left; z-index: 5;   height: 140px; overflow: hidden; cursor: pointer; display: none}
+
+.type .icon {display: block; width: 50px; height: 50px; background: transparent; margin: 0 auto; border-radius: 100px; border: 1px solid white; margin-top: 20px}
+.type .title {padding: 20px; display: block; text-align: center; font-size: 24px; font-weight: 100}
+.type .description {margin: 10px 40px 40px 40px; padding: 20px 0 0 0;  font-size: 16px; color: #999; display: block; line-height: 24px; border-top: 1px solid #333 }
+
+.title, .description {color: white}
+
+form {background: rgba(0,0,0,0.9); padding: 20px; margin: 100px; color: white}
+
+footer {position: absolute; display: block; width: 100%; height: 150px; background: black}
+
+#select h1 {font-size: 36px}
+
+.up {display: block; width: 50px; height: 50px; background-color: white; right:50%; border-radius: 25px; margin-top: 70px; position: absolute; z-index: 6; text-align: center}

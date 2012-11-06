@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Bullet Journal</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {	
+			$('#article').click(function(){
+				$("#player").slideToggle();	
+			});
+		});
+			
+		</script>
+
+		<style type="text/css">
+		body {font-size: 18px; color: #999; margin: 0; padding: 0; background: #eee; font-family: sans-serif}
+		#nav {position: fixed; top: 0px; width: 100%;   display: none}
+		ul{width: 1024px;  margin: 0 auto 0 auto; font-size: 24px; color: #666;  padding: 0 }
+		ul li {width: 169px; padding: 20px 0 0 0; border-left: 1px #999 solid; float: left; text-align: center;  background: white;}	
+		#video {width: 1024px; background: black; margin: 50px auto 0px auto;  padding: 0px;  z-index: 1; height: 540px  }	
+		.header {font-size: 24px; width: 100%; display: block}
+		.subheader {font-size: 14px; width: 100%;  display: block}
+
+		#article {width: 1024px; margin: 0 auto 0 auto; padding: 0px; line-height: 1.5em; color: black; background: white; z-index: 9; }
+		#article h1 {text-align: center; padding: 30px 0 0 0; margin: 0}
+		p {padding: 30px}
+		</style>
+	</head>
+		
+	<body>
+
+		<div id="wrapper">
+			<div id="nav">
+				<ul>
+					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
+					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
+					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
+					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
+					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>	<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
+					
+				</ul>
+			</div>
+			
+			<div id="video">
+
+
+			</div>
+						<div id="article">
+				<h1>Introduction</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<p>
+			</div>
+			<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=120231688065595";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+			<div id="comments"><div class="fb-comments" data-href="http://example.com" data-num-posts="2" data-width="960"></div></div>
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>
