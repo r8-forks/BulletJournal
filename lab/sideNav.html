@@ -82,16 +82,18 @@
 		</script>
 		
 
-		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
 		<style type="text/css">
-		body {font-size: 18px; margin: 30px ; padding: 0; background: #ccc; font-family: sans-serif}
-		#wrapper {width: 100%; background: white; overflow: hidden }
-		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee}
-		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px;  }
-		#nav ul li { padding: 20px; width: 80px; float: left; text-align: center;  border: 1px solid #ccc; background: #e2e2e2; margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}	
+		body {font-size: 18px; margin: 0px ; padding: 0; background: #ede6d5; font-family: sans-serif}
+		#wrapper {width: 90%; background: white; overflow: hidden; box-shadow: 0px 20px 40px rgba(0,0,0,0.2); margin: 50px auto;  }
+		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee;  }
+		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px; z-index: 1 }
+		#nav ul li { padding: 20px; width: 80px; float: left; text-align: center;  border-bottom: 1px solid #ccc;  margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}	
 		#nav ul li:hover {cursor: pointer}
-		#center { margin: 0 auto 0 auto; padding: 0px; line-height: 1.5em; color: black; background:  z-index: 9; height: 100%; overflow-y: scroll; padding: 0 }
-		#center_content { margin: 0 auto; background: white}
+		
+		
+		#center { margin: 0 ;  line-height: 1.5em; color: black;  height: 100%; overflow-y: scroll; padding: 0;   z-index: 89; box-shadow: 0px 0px 21px rgba(10,0,20,0.2); position: relative }
+		#center_content { margin: 0; background: white; padding: 40px;}
 		#video {width: 100%; background: black; margin: 0 auto 0px auto;  padding: 0px;  z-index: 1; height: 540px  }	
 		.header {font-size: 14px; width: 100%; display: block}
 		.subheader {font-size: 14px; width: 100%;  display: block}
@@ -118,12 +120,12 @@
 		#close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; text-indent: -9999px; width: 20px}
 		
 		
-		#open {position: absolute;
+		#open {position: fixed;
 				width: 0; 
 				height: 0; 
-				border-top: 0px solid #ccc;
+				border-top: 0px solid #eee;
 				border-bottom: 65px solid #e5e5e5;
-				border-left: 60px solid #ccc;
+				border-left: 60px solid #eee;
 				z-index: 99;
 				cursor: pointer;}
 
@@ -133,13 +135,7 @@
 	</head>
 		
 	<body>
-			
 
-			<h1 id="logo" style="color:white; text-align:center">Bullet journal</h1>
-		
-
-		<!-- <div id="getStarted"> Get started</div> -->
-<span id="open" style=""></span>
 		<div id="wrapper">	
 							
 			<div id="nav">
@@ -177,7 +173,9 @@
 
 
 			<div id="center">
+				<span id="open" style=""></span>
 				<div id="center_content">
+				
 				
 		<div class="video-container">
 	<iframe src="http://player.vimeo.com/video/51591015?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=999999" width="1024" height="576" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
