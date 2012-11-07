@@ -5,11 +5,7 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 	
 		<script type="text/javascript">
-		$(document).ready(function() {
-		
-			$('#open').css({"borderBottomWidth": "0", "borderLeftWidth" : "0"});
-		        $('#open').delay(2000).animate({borderBottomWidth: 60, borderLeftWidth: 60}, 800, "easeOutCirc");
-			
+		$(document).ready(function() {	
 			$('#center h1').click(function(){
 				$("#center").animate({ scrollTop: $('#center h1').offset().top }, 300);
 			});
@@ -32,47 +28,32 @@
 				$(this).animate({backgroundColor:'#eee'}, 'fast')	
 			});
 			
-
 			$('#open').hover(
 				function(){
-				$('#open').stop().animate({borderBottomWidth: 55, borderLeftWidth: 55 }, 200, "easeOutCirc");
+				$(this).animate({backgroundColor:'#aaa'}, 'fast')
 				},
 				
 				function(){
-				$('#open').stop().animate({borderBottomWidth: 60, borderLeftWidth: 60}, 600, "easeOutCirc");
+				$(this).animate({backgroundColor:'#ddd'}, 'fast')	
 			});
 			
-
-
-/*
 			$('#logo').click(function(){
 				$('#nav').animate({marginLeft:0}, 'fast')
-		
+			/* 	$(this).animate({marginTop:'-200'}, 'fast') */
 		
 			});
-*/
 			
 
 			$('#close').click(function(){
-				
-				$('#nav').animate({marginLeft:"-200px"}, 200, "easeOutCirc");
+				$('#open').toggle();
+				$('#nav').animate({marginLeft:"-160px"}, 200, "easeOutCirc");
 				$('#nav').css('overflow','hidden');
-				
-			
-				$('#open').show();
-				$('#open').css({"borderBottomWidth": "0", "borderLeftWidth" : "0"});
-		        $('#open').animate({borderBottomWidth: 60, borderLeftWidth: 60}, 500, "easeOutCirc");
-		    
 			});
 
 		
 			$('#open').click(function(){
 				$('#nav').animate({marginLeft:"0px"});
-				$('#open').stop().animate({borderBottomWidth: 0, borderLeftWidth: 0});
-				jQuery.queue( $("#nav")[0], "fx", function () {
-		        $('#open').hide();
-		        jQuery.dequeue( this );
-			    });
+				$('#open').toggle();
 				$('#nav').css('overflow','scroll');
 			});
 
@@ -84,7 +65,7 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 		<style type="text/css">
-		body {font-size: 18px; margin: 30px ; padding: 0; background: #ccc; font-family: sans-serif}
+		body {font-size: 18px; margin: 0 ; padding: 0; background: #ccc; font-family: sans-serif}
 		#wrapper {width: 100%; background: white; overflow: hidden }
 		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee}
 		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px;  }
@@ -97,7 +78,7 @@
 		.subheader {font-size: 14px; width: 100%;  display: block}
 		#ads {float: right; }
 		#article h1 {text-align: center; padding: 30px 0 0 0; margin: 0}
-		p {padding: 60px}
+		p {padding: 30px}
 		.video-container {
 			position: relative;
 			padding-bottom: 56.25%;
@@ -116,36 +97,23 @@
 			height: 100%;
 		}
 		#close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; text-indent: -9999px; width: 20px}
-		
-		
-		#open {position: absolute;
-				width: 0; 
-				height: 0; 
-				border-top: 0px solid #ccc;
-				border-bottom: 65px solid #e5e5e5;
-				border-left: 60px solid #ccc;
-				z-index: 99;
-				cursor: pointer;}
-
+		#open {float:right; height: 100%; display: block; cursor: pointer; background: #ddd; text-indent: -9999px; width: 40px;}
 		#getStarted {display: block; border-radius: 50px; width: 50; height: 50px; position: fixed; background: red; z-index: 99; left:45%; top: 50; padding: 20px}
 
 		</style>
 	</head>
 		
 	<body>
-			
-
-			<h1 id="logo" style="color:white; text-align:center">Bullet journal</h1>
-		
+				<h1 id="logo" style="color:white; text-align:center">Bullet journal</h1>
 
 		<!-- <div id="getStarted"> Get started</div> -->
-<span id="open" style=""></span>
+
 		<div id="wrapper">	
-							
+		
 			<div id="nav">
 		
 				<span id="close">X </span>
-	
+				<span id="open" style="display:none">V</span>
 				
 				
 				<ul>
@@ -205,6 +173,7 @@
 			</div>
 	
 		</div>
+							
 
 
 
