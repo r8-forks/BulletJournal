@@ -3,9 +3,12 @@
 		<title>Bullet Journal</title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.scrolly.js"></script>
 	
 		<script type="text/javascript">
 		$(document).ready(function() {	
+		
+		   $('.parallax').scrolly({bgParallax: true});
 			$('#center h1').click(function(){
 				$("#center").animate({ scrollTop: $('#center h1').offset().top }, 300);
 			});
@@ -37,13 +40,9 @@
 				$(this).animate({backgroundColor:'#ddd'}, 'fast')	
 			});
 			
-			$('#getStarted').click(function(){
-				$('#nav').animate({marginLeft:0}, 'fast'),
-				$(this).animate({marginTop:'-200'}, 'fast')
-		
-			});
 			
-
+			
+			
 			$('#close').click(function(){
 				$('#open').toggle();
 				$('#nav').animate({marginLeft:"-160px"}, 200, "easeOutCirc");
@@ -56,6 +55,11 @@
 				$('#open').toggle();
 				$('#nav').css('overflow','scroll');
 			});
+			
+			   	$('#logo').click(function(){
+				$('html, body').animate({scrollTop:1200}, 'slow');
+
+		});
 
 
 		});
@@ -63,52 +67,71 @@
 		</script>
 		
 
-		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../css/styles.css">
 		<style type="text/css">
-		body {font-size: 18px; color: #999; margin: 30px 30px 0 ; padding: 0; background: #999; font-family: sans-serif}
+		body {font-size: 18px; color: #999; padding: 0; background: #999; font-family: sans-serif}
 		#wrapper {width: 100%; background: white; overflow: hidden }
-		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee}
+		#nav { height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee}
 		ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px;  }
 		ul li { padding: 20px; width: 80px; float: left; text-align: center;  border: 1px solid #ccc; background: #e2e2e2; margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}	
-		ul li:hover {cursor: pointer}
+			ul li:hover {cursor: pointer}
 		#center { margin: 0 auto 0 auto; padding: 0px; line-height: 1.5em; color: black; background:  z-index: 9; height: 100%; overflow-y: scroll; padding: 0 }
 		#center_content { margin: 0 auto; background: white}
 		#video {width: 100%; background: black; margin: 0 auto 0px auto;  padding: 0px;  z-index: 1; height: 540px  }	
 		.header {font-size: 14px; width: 100%; display: block}
 		.subheader {font-size: 14px; width: 100%;  display: block}
+		h1 {color: white}
 		#ads {float: right; width: 100px; }
 		#article h1 {text-align: center; padding: 30px 0 0 0; margin: 0}
-		p {padding: 30px}
+		p {padding: 30px; color: black}
 		.video-container {
-			position: relative;
-			padding-bottom: 56.25%;
-			padding-top: 30px;
-			height: 0;
-			overflow: hidden;
-			}
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
+				}
 
-		.video-container iframe,  
-		.video-container object,  
-		.video-container embed {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-		#close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; text-indent: -9999px; width: 20px}
-		#open {float:right; height: 100%; display: block; cursor: pointer; background: #ddd; text-indent: -9999px; width: 40px;}
-		#getStarted {display: block; border-radius: 50px; width: 50; height: 50px; position: fixed; background: red; z-index: 99; left:45%; top: 50; padding: 20px}
+			.video-container iframe,  
+			.video-container object,  
+			.video-container embed {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			#close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; text-indent: -9999px; width: 20px}
+			#open {float:right; height: 100%; display: block; cursor: pointer; background: #ddd; text-indent: -9999px; width: 40px;}
 
 		</style>
 	</head>
 		
 	<body>
 
-		<!-- <div id="getStarted"> Get started</div> -->
-			<h1 id="logo" style="color:white; text-align:center">Bullet journal</h1>
-		<div id="wrapper">
-		
+
+ <header>
+    	<span id="logo">Logo goes here</span>
+    </header>
+
+    <section id="select">
+        <article>
+         
+         <h1>Bullet Journal Video</h1>   
+         <div id="types"> 
+         </div>
+    </article>
+        <div class="parallax" data-velocity="-.3"></div>
+         <div class="parallax" data-velocity="-.5"  ></div>
+         <div class="parallax" data-velocity="-.8"  ></div>
+    </section>
+
+    
+   
+    
+     <section id="artist">
+        		<div id="wrapper">
+
 			<div id="nav">
 		
 				<span id="close">X </span>
@@ -160,20 +183,23 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					
-					
-								<div id="ads">
-				<ul>
+				
+				<div id="ads">
+					<ul>
 					<li><span class="header">Social<span></li>
 					<li><span class="header">Blog<span></li>	
 					<li><span class="header">About<span></li>
-				</ul>
+					</ul>
+				</div>
 			</div>
-					</div>
-			</div>
-	
 		</div>
-							
+	
+    </section>
+    
 
+
+
+		
 
 
 	</body>
