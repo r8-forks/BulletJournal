@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Bullet Journal</title>
@@ -66,6 +67,7 @@
 			    });
 				$('#nav').css('overflow','scroll');
 			});
+			
 
 
 		});
@@ -75,16 +77,17 @@
 
 
 		<style type="text/css">
-		body {font-size: 18px; margin: 0px ; padding: 0; background: #ede6d5; font-family: sans-serif}
-		#wrapper {width: 90%; background: white; overflow: hidden; box-shadow: 0px 20px 40px rgba(0,0,0,0.2); margin: 50px auto; }
+		body {font-size: 18px; margin: 0px ; padding: 0; background: #ede6d5; font-family: sans-serif;  }
+		#wrapperOuter {margin: 50px}
+		#wrapper { background: white; overflow: hidden; box-shadow: 0px 20px 40px rgba(0,0,0,0.2); margin: 50px auto; }
 		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee;  }
-		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px; z-index: 1 }
+		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px; z-index: 1; position: fixed; height: 100%; overflow: scroll; background: blue }
 		#nav ul li { padding: 20px; width: 80px; float: left; text-align: center;  border-bottom: 1px solid #ccc;  margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}	
 		#nav ul li:hover {cursor: pointer}
 		
 		
-		#center { margin: 0 ;  line-height: 1.5em; color: black;  height: 100%; overflow-y: scroll; padding: 0;   z-index: 89; box-shadow: 0px 0px 21px rgba(10,0,20,0.2); position: relative }
-		#center_content { margin: 0; background: white; padding: 40px;}
+		#center { margin: 0 ;  line-height: 1.5em; color: black; overflow-y: hidden; padding: 0;  z-index: 89; box-shadow: 0px 0px 21px rgba(10,0,20,0.2);   }
+		#center_content { margin: 0; }
 		#video {width: 100%; background: black; margin: 0 auto 0px auto;  padding: 0px;  z-index: 1; height: 540px  }	
 		.header {font-size: 14px; width: 100%; display: block}
 		.subheader {font-size: 14px; width: 100%;  display: block}
@@ -126,7 +129,7 @@
 	</head>
 		
 	<body>
-
+		<div id="wrapperOuter">
 		<div id="wrapper">	
 							
 			<div id="nav">
@@ -137,25 +140,21 @@
 				
 				<ul>
 					
-					<li><span class="header">Introduction<span></li>
-					<li><span class="header">Set Up<span></li>
-					<li><span class="header">Bullets<span></li>
-					<li><span class="header">Journal<span></li>
-					<li><span class="header">Calendar<span></li>
-					<li><span class="header">Expenses<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
-					<li><span class="header">Topic<span></li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
+					<li>Chapter</li>
 	
 
 				</ul>
@@ -183,18 +182,11 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					
 					
-								<div id="ads">
-				<ul>
-					<li><span class="header">Social<span></li>
-					<li><span class="header">Blog<span></li>	
-					<li><span class="header">About<span></li>
-				</ul>
-			</div>
 					</div>
 			</div>
 	
 		</div>
-
+		</div>
 
 
 	</body>
