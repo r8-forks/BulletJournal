@@ -1,68 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html>
-	<head>
-		<title>Bullet Journal</title>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function() {	
-			$('#article').click(function(){
-				$("#player").slideToggle();	
-			});
-		});
-			
-		</script>
+<head>
+<meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+<title>Bullet Journal</title>
 
-		<style type="text/css">
-		body {font-size: 18px; color: #999; margin: 0; padding: 0; background: #eee; font-family: sans-serif}
-		#nav {position: fixed; top: 0px; width: 100%;   display: none}
-		ul{width: 1024px;  margin: 0 auto 0 auto; font-size: 24px; color: #666;  padding: 0 }
-		ul li {width: 169px; padding: 20px 0 0 0; border-left: 1px #999 solid; float: left; text-align: center;  background: white;}	
-		#video {width: 1024px; background: black; margin: 50px auto 0px auto;  padding: 0px;  z-index: 1; height: 540px  }	
-		.header {font-size: 24px; width: 100%; display: block}
-		.subheader {font-size: 14px; width: 100%;  display: block}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js">
+</script>
+<script type="text/javascript">
+                $(document).ready(function() {
+                
+                        $('#open').css({"borderBottomWidth": "0", "borderLeftWidth" : "0"});
+                        $('#open').delay(2000).animate({borderBottomWidth: 60, borderLeftWidth: 60}, 800, "easeOutCirc");
+                        
+                        $('li').click(function(){
+                                $("#center").animate({ scrollTop: $('#center h1').offset().top }, 800, "easeOutCirc");
+                        });
+                        
+                        $('#nav li').hover(
+                                function(){
+                                $(this).stop().animate({borderColor:'#999'}, 'fast')
+                                },
+                                
+                                function(){
+                                $(this).stop().animate({borderColor:'#ccc'}, 'fast')    
+                        });
+                        
+                        $('#close').hover(
+                                function(){
+                                $(this).animate({backgroundColor:'#ddd'}, 'fast')
+                                },
+                                
+                                function(){
+                                $(this).animate({backgroundColor:'#eee'}, 'fast')       
+                        });
+                        
 
-		#article {width: 1024px; margin: 0 auto 0 auto; padding: 0px; line-height: 1.5em; color: black; background: white; z-index: 9; }
-		#article h1 {text-align: center; padding: 30px 0 0 0; margin: 0}
-		p {padding: 30px}
-		</style>
-	</head>
-		
-	<body>
-
-		<div id="wrapper">
-			<div id="nav">
-				<ul>
-					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
-					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
-					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
-					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
-					<li><span class="header">Header<span><span class="subheader">Subhead</span></li>	<li><span class="header">Header<span><span class="subheader">Subhead</span></li>
-					
-				</ul>
-			</div>
-			
-			<div id="video">
+                        $('#open').hover(
+                                function(){
+                                $('#open').stop().animate({borderBottomWidth: 55, borderLeftWidth: 55 }, 200, "easeOutCirc");
+                                },
+                                
+                                function(){
+                                $('#open').stop().animate({borderBottomWidth: 60, borderLeftWidth: 60}, 600, "easeOutCirc");
+                        });
+                        
 
 
-			</div>
-						<div id="article">
-				<h1>Introduction</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<p>
-			</div>
-			<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=120231688065595";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-			<div id="comments"><div class="fb-comments" data-href="http://example.com" data-num-posts="2" data-width="960"></div></div>
-			<div id="footer"></div>
-		</div>
-	</body>
+                        $('#close').click(function(){
+                                
+                                $('#nav').animate({marginLeft:"-200px"}, 200, "easeOutCirc");
+                                $('#nav').css('overflow','hidden');
+                                
+                        
+                                $('#open').show();
+                                $('#open').css({"borderBottomWidth": "0", "borderLeftWidth" : "0"});
+                        $('#open').animate({borderBottomWidth: 60, borderLeftWidth: 60}, 500, "easeOutCirc");
+                    
+                        });
+
+                
+                        $('#open').click(function(){
+                                $('#nav').animate({marginLeft:"0px"});
+                                $('#open').stop().animate({borderBottomWidth: 0, borderLeftWidth: 0});
+                                jQuery.queue( $("#nav")[0], "fx", function () {
+                        $('#open').hide();
+                        jQuery.dequeue( this );
+                            });
+                                $('#nav').css('overflow','scroll');
+                        });
+
+
+                });
+                         
+</script>
+<style type="text/css">
+                body {font-size: 18px; margin: 0px ; padding: 0; background: #ede6d5; font-family: sans-serif}
+                #wrapper {width: 90%; background: white; overflow: hidden; box-shadow: 0px 20px 40px rgba(0,0,0,0.2); margin: 50px auto; }
+                #nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee;  }
+                #nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px; z-index: 1 }
+                #nav ul li { padding: 20px; width: 80px; float: left; text-align: center;  border-bottom: 1px solid #ccc;  margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}    
+                #nav ul li:hover {cursor: pointer}
+                
+                
+                #center { margin: 0 ;  line-height: 1.5em; color: black;  height: 100%; overflow-y: scroll; padding: 0;   z-index: 89; box-shadow: 0px 0px 21px rgba(10,0,20,0.2); position: relative }
+                #center_content { margin: 0; background: white; padding: 40px;}
+                #video {width: 100%; background: black; margin: 0 auto 0px auto;  padding: 0px;  z-index: 1; height: 540px  }   
+                .header {font-size: 14px; width: 100%; display: block}
+                .subheader {font-size: 14px; width: 100%;  display: block}
+                #ads {float: right; }
+                #article h1 {text-align: center; padding: 30px 0 0 0; margin: 0}
+                p {padding: 60px}
+                .video-container {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        padding-top: 30px;
+                        height: 0;
+                        overflow: hidden;
+                        }
+
+                .video-container iframe,  
+                .video-container object,  
+                .video-container embed {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                }
+                #close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; text-indent: -9999px; width: 20px}
+                
+                
+                #open {position: fixed;
+                        width: 0; 
+                        height: 0; 
+                        border-top: 0px solid #eee;
+                        border-bottom: 65px solid #f7941d;
+                        border-left: 60px solid #eee;
+                        z-index: 99;
+                        cursor: pointer;
+                        }
+
+                #getStarted {display: block; border-radius: 50px; width: 50; height: 50px; position: fixed; background: red; z-index: 99; left:45%; top: 50; padding: 20px}
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="nav"><span id="close">X</span>
+<ul>
+<li><span class="header">Introduction</span></li>
+<li><span class="header header">Set Up</span></li>
+<li><span class="header header">Bullets</span></li>
+<li><span class="header header">Journal</span></li>
+<li><span class="header header">Calendar</span></li>
+<li><span class="header header">Expenses</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+<li><span class="header header">Topic</span></li>
+</ul>
+</div>
+<div id="center"><span class="header" id="open"></span>
+<div id="center_content">
+<div class="video-container"><iframe src="http://player.vimeo.com/video/51591015?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=999999" width="1024" height="576" frameborder="0"></iframe></div>
+<h1>Introduction</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div id="ads">
+<ul>
+<li><span class="header">Social</span></li>
+<li><span class="header header">Blog</span></li>
+<li><span class="header header">About</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>

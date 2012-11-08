@@ -7,7 +7,7 @@ p{line-height:1.6;}
 strong{font-weight:bold;}
 
 section {
-	min-height: 1000px;
+	min-height: 500px;
     position: relative;
     width: 100% !important;
     margin: 0;
@@ -17,13 +17,13 @@ section {
 
 #logo {position: absolute; z-index: 3; text-indent: -9999px; display: block; width: 300px; height: 62px; background: no-repeat center center url(../img/logo.png); padding: 50px; color: white; font-size: 23px; width: 100%}
 
-section:nth-of-type(1){background:whitesmoke;height:1200px;   z-index: 2;}
-section:nth-of-type(2){background:black;height:1600px;   z-index: 1;}
+section:nth-of-type(1){background:whitesmoke;   z-index: 2;}
+
 
 #select>div:nth-of-type(1){
     background: url(../img/stars.jpg) 50% 0 no-repeat fixed;
     margin: 0;
-    height: 1200px;
+    height: 1000px;
     bottom:0;left:0;    
 }
 
@@ -77,7 +77,7 @@ section:nth-of-type(2){background:black;height:1600px;   z-index: 1;}
 #artist>div:nth-of-type(1) {
     background: url(../img/artistsBG.jpg) no-repeat fixed;
     margin: 0;
-    height: 1200px;
+
     bottom:0;left:0;
     width: 100%;
 
@@ -87,17 +87,7 @@ section:nth-of-type(2){background:black;height:1600px;   z-index: 1;}
 #artist>div:nth-of-type(2) {
     background: url(../img/2.png) 50% 50% no-repeat fixed;
     margin: 0;
-    height: 1200px;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%; 
-}
 
-#artist>div:nth-of-type(3) {
-    background: url(../img/dots.gif) repeat fixed;
-    margin: 0;
-    height: 1200px;
     position:absolute;
     top:0;
     left:0;
@@ -105,23 +95,12 @@ section:nth-of-type(2){background:black;height:1600px;   z-index: 1;}
 }
 
 
-
-#artistTwo>div:nth-of-type(1) {
-    background: url(../img/records.jpeg) 50% 0 no-repeat fixed;
-    margin: 0;
-    height: 1200px;
-    bottom:0;left:0;
-    width: 100%;
-
-
-}
 
 
 section h1{color:#fff; font-size:24px; margin:0 auto 80px auto; text-align: center; font-weight: 100; padding: 0;  padding: 0 0 20px 0; display: block; width: 100% }
 section p{color:black; width: 800px; color: white}
 section article{top:200px; left: 40px; width:100%;z-index:4; position: absolute}
 
-#fan, #artist, #artistTwo, #venue {display: none}
 
 .parallax-item{position:absolute;z-index:5;top:40px;left:400px;}
 
