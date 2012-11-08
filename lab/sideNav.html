@@ -10,8 +10,8 @@
 			$('#open').css({"borderBottomWidth": "0", "borderLeftWidth" : "0"});
 		        $('#open').delay(2000).animate({borderBottomWidth: 60, borderLeftWidth: 60}, 800, "easeOutCirc");
 			
-			$('#center h1').click(function(){
-				$("#center").animate({ scrollTop: $('#center h1').offset().top }, 300);
+			$('li').click(function(){
+				$("#center").animate({ scrollTop: $('#center h1').offset().top }, 800, "easeOutCirc");
 			});
 			
 			$('#nav li').hover(
@@ -43,15 +43,6 @@
 			});
 			
 
-
-/*
-			$('#logo').click(function(){
-				$('#nav').animate({marginLeft:0}, 'fast')
-		
-		
-			});
-*/
-			
 
 			$('#close').click(function(){
 				
@@ -85,7 +76,7 @@
 
 		<style type="text/css">
 		body {font-size: 18px; margin: 0px ; padding: 0; background: #ede6d5; font-family: sans-serif}
-		#wrapper {width: 90%; background: white; overflow: hidden; box-shadow: 0px 20px 40px rgba(0,0,0,0.2); margin: 50px auto;  }
+		#wrapper {width: 90%; background: white; overflow: hidden; box-shadow: 0px 20px 40px rgba(0,0,0,0.2); margin: 50px auto; }
 		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee;  }
 		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px; z-index: 1 }
 		#nav ul li { padding: 20px; width: 80px; float: left; text-align: center;  border-bottom: 1px solid #ccc;  margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}	
