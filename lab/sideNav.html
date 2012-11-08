@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-
 <html>
-</script>
-
 	<head>
-	    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Bullet Journal</title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
@@ -81,10 +75,9 @@
 
 
 		<style type="text/css">
-		html, body {background: #ede6d5; font-family: sans-serif; height: 100%; margin: 20px}
-		#wrapperOuter {margin: 0 auto; width: 95%}
-		#wrapper { background: white;  box-shadow: 0px 20px 40px rgba(0,0,0,0.2);  background: #eee; position: fixed; overflow-x: hidden; height: 100% }
-		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px;   }
+		body {font-size: 18px; margin: 0px ; padding: 0; background: #ede6d5; font-family: sans-serif}
+		#wrapper {width: 90%; background: white; overflow: hidden; box-shadow: 0px 20px 40px rgba(0,0,0,0.2); margin: 50px auto; }
+		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee;  }
 		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px; z-index: 1 }
 		#nav ul li { padding: 20px; width: 80px; float: left; text-align: center;  border-bottom: 1px solid #ccc;  margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}	
 		#nav ul li:hover {cursor: pointer}
@@ -115,63 +108,94 @@
 			width: 100%;
 			height: 100%;
 		}
-		#close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; width: 20px}
+		#close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; text-indent: -9999px; width: 20px}
+		
+		
 		#open {position: fixed;
 				width: 0; 
 				height: 0; 
 				border-top: 0px solid #eee;
-				border-bottom: 65px solid #f7941d;
+				border-bottom: 65px solid #e5e5e5;
 				border-left: 60px solid #eee;
 				z-index: 99;
-				cursor: pointer;
-				}
+				cursor: pointer;}
+
 		#getStarted {display: block; border-radius: 50px; width: 50; height: 50px; position: fixed; background: red; z-index: 99; left:45%; top: 50; padding: 20px}
 
 		</style>
 	</head>
 		
 	<body>
-		<div id='wrapperOuter'>
-			<div id="wrapper">	
+
+		<div id="wrapper">	
+							
 			<div id="nav">
-				<span id="close">X</span>
+		
+				<span id="close">X </span>
+	
+				
+				
 				<ul>
-					<li><span class="header">Introduction</span></li>
-					<li><span class="header">Set Up</span></li>
-					<li><span class="header">Bullets</span></li>
-					<li><span class="header">Journal</span></li>
-					<li><span class="header">Calendar</span></li>
-					<li><span class="header">Expenses</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
-					<li><span class="header">Topic</span></li>
+					
+					<li><span class="header">Introduction<span></li>
+					<li><span class="header">Set Up<span></li>
+					<li><span class="header">Bullets<span></li>
+					<li><span class="header">Journal<span></li>
+					<li><span class="header">Calendar<span></li>
+					<li><span class="header">Expenses<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+	
+
 				</ul>
+			
 			</div>
+
+
 			<div id="center">
 				<span id="open" style=""></span>
-				<div id="center_content">				
-					<div class="video-container">
-					<iframe src="http://player.vimeo.com/video/51591015?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=999999" width="1024" height="576" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					</div>
+				<div id="center_content">
+				
+				
+		<div class="video-container">
+	<iframe src="http://player.vimeo.com/video/51591015?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=999999" width="1024" height="576" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+
+
+				
+				
 					<h1>Introduction</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>		
-				</div>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					
+					
+								<div id="ads">
+				<ul>
+					<li><span class="header">Social<span></li>
+					<li><span class="header">Blog<span></li>	
+					<li><span class="header">About<span></li>
+				</ul>
 			</div>
+					</div>
+			</div>
+	
 		</div>
-		</div>
+
+
+
 	</body>
 </html>
