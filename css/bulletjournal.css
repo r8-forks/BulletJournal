@@ -86,6 +86,11 @@ h1, h2, h3, h4, h5 {
 h2 {color: white; font-size: 102px!important; margin-top: 100px; }
 h3 {font-size: 72px}
 
-.book {display: block; height: 500px; width: 600px; background: black; float: right; margin-top: 100px; top:0; z-index: 9999; }
+.book {display: block; height: 500px; width: 600px; background: black; float: right; margin-top: 100px; top:0; z-index: 9999; padding: 20px}
 
 .fixed {position: fixed; right: 0; margin-top: 100px}
+.paper {background: #fefef7; border-radius: 5px; display: block; padding: 20px; height: 450px; }
+
+.highlight {background: yellow; padding: 5; display: block; overflow: hidden; width: 0; height: 20px}
+
+.number-demo {bottom: 0; position: absolute; margin-bottom: 50px}

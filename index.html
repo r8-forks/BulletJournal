@@ -40,9 +40,20 @@
 	<div id="setup" class="slide">
 		
 			<div class="book">
-				<div class="page-number-demo highlight">1.)</div>
-				<div class="page-topic-demo highlight"></div>
-				<div class="page-index-demo highlight"></div>	
+				<div class="paper">
+					
+					<div class="topic-demo highlight">Topic / Subtopic / Subtopic</div>
+					<div class="index-demo highlight">
+						<ul>
+							<li>topic</li>
+							<li>topic</li>
+							<li>topic</li>
+							<li>topic</li>
+							<li>topic</li>
+						</ul>	
+					</div>
+					<div class="number-demo highlight">1.)</div>
+				</div>		
 			</div>
 			
 		<div class="setup-wrapper">
@@ -125,11 +136,17 @@
 
 
 
-			deck.controller.animate('.page-number',{duration:1000, property: 'margin-bottom', start:200, end: 0, pin:true });
-			deck.controller.animate('.page-number',{delay: 5000, property: 'margin-top', start:200, end: -1000, pin:false, duration: 500 });
-			deck.controller.animate('.page-topic', {delay:10000, duration:1000, property: 'margin-top', start:800, end: 0, pin:true });
-			deck.controller.animate('.page-topic', {delay:10000, property: 'margin-top', end: 0, pin:false, duration: 500 });
+			
+			deck.controller.animate('.page-number',{duration:500, property: 'margin-bottom', start:200, end: 0, pin:true });
+			deck.controller.animate('.number-demo',{delay: 500, duration:500, property:'width', start:0, end: 30});
+			deck.controller.animate('.page-number',{delay: 1000, property: 'margin-top', start:200, end: -1000, pin:false, duration: 500 });
+			deck.controller.animate('.number-demo',{delay: 500, duration:1000, property:'background-color', start:'yellow', end: 'white'});
+			deck.controller.animate('.topic-demo',{delay: 1500, duration:1000, property:'width', start:0, end: 200});
+			deck.controller.animate('.page-topic', {delay:2000, duration:1500, property: 'margin-top', start:800, end: 0, pin:true });
+			deck.controller.animate('.page-topic', {delay:2500, property: 'margin-top', end: 0, pin:false, duration: 500 });
+			
 			deck.controller.animate('.page-index', {delay:20000, property: 'margin-top', start:400, pin:true });
+			
 
 
 
