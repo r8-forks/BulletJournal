@@ -1,6 +1,16 @@
+.VeneerTwo { font-family: VeneerTwo; }
+h1, h2, h3, h4, h5 { 
+	font-family: VeneerTwo!important; 
+	font-weight: normal!important;
+	font-style: normal!important;  
+}
+
 .slide {
 	width: 100%;
-	background-color: transparent
+	background-color: transparent;
+	margin: 0;
+	padding: 0
+	
 }
 
 
@@ -12,12 +22,21 @@
 	padding: 160px 0 0 0;
 }
 
-#setup{
+
+
+#setup-title{
 	background: url(../img/secondBG.jpg) 50% 0 no-repeat fixed ;
 	border-bottom: 1px solid black;
-	height: 5000px;
-	margin: 0 auto;
-	overflow: hidden;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+
+
+}
+
+#setup {
+	background: #fefef7;
+	margin: 0;
 	padding: 0;
 }
 
@@ -56,12 +75,17 @@
 
 
 
-.setup-wrapper {background: #fefef7; height: 5000px; display: block; margin-top: 200px}
+.setup-wrapper {background: #fefef7; display: block; margin: 0; position: absolute}
 
-.section-title {text-align: center; font-size: 32px; padding: 20px;}
+.section-title {text-align: center; padding: 20px;}
 
-.page-number { display: block; padding: 100px; width: 500px}
+.description { display: block; padding: 100px; width: 500px;}
 
+.page-number {margin-top: 200px; height: 500; }
 
+h2 {color: white; font-size: 102px!important; margin-top: 100px; }
+h3 {font-size: 72px}
 
-h2 {font-family: vaneer-two; color: white; size: 32px; margin-top: 50px}
+.book {display: block; height: 500px; width: 600px; background: black; float: right; margin-top: 100px; top:0; z-index: 9999; }
+
+.fixed {position: fixed; right: 0; margin-top: 100px}
