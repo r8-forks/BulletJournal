@@ -1,0 +1,67 @@
+.slide {
+	width: 100%;
+	background-color: transparent
+}
+
+
+#welcome {
+	background:url(../img/firstBG.jpg) 50% -75px no-repeat fixed;
+	border-bottom: 1px solid black;
+	height: 600px;
+	margin: 0 auto;
+	padding: 160px 0 0 0;
+}
+
+#setup{
+	background: url(../img/secondBG.jpg) 50% 0 no-repeat fixed ;
+	border-bottom: 1px solid black;
+	height: 5000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+
+#logging{
+	background: url(../img/thirdBG.jpg) 50% 0 no-repeat fixed;
+	border-bottom: 1px solid black;
+	height: 650px;
+	padding: 100px 0 0 0;	
+}
+
+#chronicling{
+	background:url(../img/firstBG.jpg) 50% -75px no-repeat fixed;
+	border-bottom: 1px solid black;
+	height: 400px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+#tips{
+	background: url(../img/secondBG.jpg) 50% 0 no-repeat fixed;
+	border-bottom: 1px solid black;
+	height: 400px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+
+#about{
+	background: url(../img/thirdBG.jpg) 50% 0 no-repeat fixed;
+	border-bottom: 1px solid black;
+	height: 400px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+
+
+.setup-wrapper {background: #fefef7; height: 5000px; display: block; margin-top: 200px}
+
+.section-title {text-align: center; font-size: 32px; padding: 20px;}
+
+.page-number { display: block; padding: 100px; width: 500px}
+
+
+
+h2 {font-family: vaneer-two; color: white; size: 32px; margin-top: 50px}
