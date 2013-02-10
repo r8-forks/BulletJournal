@@ -7,7 +7,6 @@ h1, h2, h3, h4, h5 {
 
 .slide {
 	width: 100%;
-	background-color: transparent;
 	margin: 0;
 	padding: 0
 	
@@ -15,45 +14,28 @@ h1, h2, h3, h4, h5 {
 
 
 #welcome {
-	background:url(../img/firstBG.jpg) 50% -75px no-repeat fixed;
-	border-bottom: 1px solid black;
-	height: 600px;
+	background:url(../img/firstBG.jpg) 50% -175px no-repeat fixed;
+	height: 800px;
 	margin: 0 auto;
-	padding: 160px 0 0 0;
-}
-
-
-
-#setup-title{
-	background: url(../img/secondBG.jpg) 50% 0 no-repeat fixed ;
-	border-bottom: 1px solid black;
-	height: 250px;
-	margin: 0;
 	padding: 0;
-
-
 }
+
 
 #setup {
-	background: #fefef7;
+	background: url(../img/secondBG.jpg) 50% -100px no-repeat fixed;
 	margin: 0;
 	padding: 0;
 
-	
 }
 
 
 #logging{
-	background: url(../img/thirdBG.jpg) 50% 0 no-repeat fixed;
-	border-bottom: 1px solid black;
-	height: 650px;
-	padding: 100px 0 0 0;	
+	background: url(../img/firstBG.jpg) 50% 0 no-repeat fixed;
+	padding: 0 0 0 0;	
 }
 
 #chronicling{
 	background:url(../img/firstBG.jpg) 50% -75px no-repeat fixed;
-	border-bottom: 1px solid black;
-	height: 400px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
@@ -76,23 +58,35 @@ h1, h2, h3, h4, h5 {
 }
 
 
+.navbar-inner {padding: 10px}
 
-.setup-wrapper {background: #fefef7; display: block; margin: 0; float: left }
 
-.section-title {text-align: center; padding: 20px;}
+.section-title {text-align: center; padding: 100px; margin: 0 }
 
-.description { display: block; padding: 100px; width: 500px;}
 
-.page-number {margin-top: 200px; height: 500; }
-
-h2 {color: white; font-size: 102px!important; margin-top: 100px; }
+h2 {color: white; font-size: 102px!important; line-height: 100px }
 h3 {font-size: 72px}
+.container {background: #f5f5f7; padding: 50px;}
 
-.book {display: block; height: 500px; width: 600px; background: black; float: right; margin-top: 100px; top:0; z-index: 9999; padding: 5px}
+/* Large desktop */
+@media (min-width: 1200px) {	
+.span9 {margin: 0 auto; float: none; width: 1024px}
+.container {background: #f5f5f7; width: auto}
+ }
 
-.fixed {position: fixed; right: 0; margin-top: 100px}
-.paper {background: #fefef7; border-radius: 5px; display: block; padding: 20px; height: 450px; }
 
-.highlight {background: yellow; padding: 5; display: block; overflow: hidden; width: 0; height: 20px}
 
-.number-demo {bottom: 0;  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {  
+h2 {color: white; font-size: 72px!important; line-height: 72px } 
+
+
+}
+
