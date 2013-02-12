@@ -16,65 +16,93 @@
 	</head>
 	
 	<body data-spy="scroll" data-target=".navbar">
-	<nav class="slide">
+	<nav id="brand" class="slide">
 		<div class="navbar navbar-inverse navbar-fixed-bottom">
 		  <div class="navbar-inner">
-		    <a class="brand nav-button" href="#">Bullet Journal</a>
+		    <a  class="brand nav-button" href="#brand">Bullet Journal</a>
 		    <ul class="nav">
 		      <li class="active"><a href="#welcome" class="nav-button">welcome</a></li>
-		      <li><a href="#setup" class="nav-button">setup</a></li>
+		      <li><a href="#setup" class="nav-button">Framework</a></li>
 		      <li><a href="#logging" class="nav-button">Logging</a></li>
-		      <li><a href="#chronicling" class="nav-button">Chronicling</a></li>
+		      <li><a href="#chronicling" class="nav-button">Sorting</a></li>
 		      <li><a href="#tips" class="nav-button">Tips</a></li>
 		      <li><a href="#about" class="nav-button">About</a></li>
+		
 		    </ul>
-		    	<span> social </span>
+		    	
+
+
+
 		  </div>
 		</div>
 	</nav>
 	
 	<div id="welcome" class="slide">
-		<h2 class="section-title">Bullet Journal</h2>
-		
-<a href="#setup" class="btn nav-button">get started</a>
+		<div class="welcome-container"
+			<h2 class="section-title">Bullet Journal</h2>
+			<a href="#setup" class="btn nav-button">get started</a>
+			<!-- Button to trigger modal -->
+			<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+			 
+			<!-- Modal -->
+			<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+			
+			<iframe src="http://player.vimeo.com/video/47310129?title=0&amp;byline=0&amp;portrait=0"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</div>
+</div>
 	</div>
 
 	
 
 	
 	<div id="setup" class="slide">
-	
-		<h2 class="section-title">Getting Started</h2>
-
+		<h2 class="section-title">Getting set up</h2>
 		<div class="container">
 			<div class="span9">
 				<div class="row">
-					<div class="span7">
+					
+					<div class="span9  offset1">
+						<h3>Topics</h3>
+						<p>A topic is the title of your content. It can be anything from notes, to lists, to sketches. To enter a new topic, find the next available blank spread in your bullet journal. On the top left page, give your topic a brief descriptive title. Take a second here. Naming the topic can help you clarify and focus the content you're about to enter. If you anticipate this topic will be recurring, add a subtopic so it will be easier to find what you're looking for like "renovation / budget"</p>
+					</div>
+					
+					<div class="span9">
 						<h3>Page Numbers</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="span2"><img src="..." class="img-rounded"></div>
 						
-					<div class="span3"><img src="..." class="img-rounded"></div>		
-					<div class="span8 pull-right">
-						<h3>Topic</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Use as many pages as you need for your topic, but don’t worry about hoarding blank pages. Some recurring topics just won’t be consecutive, so it’s very important to always write down the page numbers in the bottom corners of each spread so you can quickly index all your topics. </p>
+					
 					</div>
-					<div class="span4">Illustration</div>	
-					<div class="span8">
+		
+			<!--
+			
+					<div class="span1 img-container">one</div>	
+-->
+					
+			<!-- 		 <div class="span1 img-container pull-left">three</div> -->
+					<div class="span9">
 						<h3>Index</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>To index simply flip your notebook to it’s first blank page of your Bullet Journal’s. This page is called your smart index. It’s a combination of a traditional index page, and an appendix, but instead of chapters however, your index will list your topics.
+
+As you start filling your Bullet Journal, simply add your topics and their page numbers to the smart -index. Topics that span a series of page are indexed like this 5-10. Some topics however are recurring and can span multiple pages, spread out in your Bullet Journal. These topics can be indexed like this: Topic Name: 5-10, 23, 34-39 etc. If you used sub-topics, they will come in handy here: 
+
+Topic / 
+    Subtopic / Page Number
+    Subtopic / Page Number
+    Subtopic / Page Number
+
+Indexing your topics provides you the flexibility to organically fill your Bullet Journal while still being able to quickly find your content. </p>
 					</div>		
-					<div class="span4">Illustration</div>	
 				</div>
+				
+				<div ><a href="#logging" class="nav-button next">Next</a></div>
 			</div>	
-		</div>	
+		</div>		
 	</div>  
 	
 	
 	
 	<div id="logging" class="slide">
-		<h2 class="section-title">Rapid Logging</h2>
+		<h2 class="section-title">The bits and pieces</h2>
 
 		<div class="container">
 			<div class="span9">
@@ -103,16 +131,17 @@
 	
 	
 	<div id="chronicling" class="slide">
-				<h2 class="section-title">The and Calendar and the Journal</h2>
-
+		<h2 class="section-title">Putting it all together</h2>
 		<div class="container">
 			<div class="span9">
 				<div class="row">
 					<div class="span7">
 						<h3>Bullet Types</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+		
 					</div>
-					<div class="span2"><img src="..." class="img-rounded"></div>
+					<div class="span2 animate-build" data-animation="fly-in-right"><img src="..." class="img-rounded"></div>
 						
 					<div class="span3"><img src="..." class="img-rounded"></div>		
 					<div class="span8 pull-right">
@@ -131,10 +160,63 @@
 	</div>
 	
 	<div id="tips" class="slide">
-		Tips Div
+		<h2 class="section-title">Tips and tricks</h2>
+		<div class="container">
+			<div class="span9">
+				<div class="row">
+					<div class="span7">
+						<h3>Calendar</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+		
+					</div>
+					<div class="span2 animate-build" data-animation="fly-in-right"><img src="..." class="img-rounded"></div>
+						
+					<div class="span3"><img src="..." class="img-rounded"></div>		
+					<div class="span8 pull-right">
+						<h3>Todo</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="span4">Illustration</div>	
+					<div class="span8">
+						<h3>Dailies</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>		
+					<div class="span4">Illustration</div>	
+					<div class="span4">Illustration</div>	
+					<div class="span8">
+						<h3>Migrating</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>		
+					<div class="span4">Illustration</div>	
+					
+				</div>
+			</div>	
+		</div>	
 	</div>
 	<div id="about" class="slide">
-		About Div
+		<h2 class="section-title">A note from your sponsor</h2>
+		<div class="container">
+			<div class="span9">
+				<div class="row">
+					<div class="span9">
+						<h3>The Bullet Journal</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+		
+					<div class="span9">
+						<h3>The Author</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+
+					<div class="span9">
+						<h3>Spread the word</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>		
+			
+				</div>
+			</div>	
+		</div>	
 	</div>
 	
 	
@@ -150,7 +232,7 @@
 		$(document).ready(function () {	
 
 
-				
+			
 				
 		//.parallax(xPosition, adjuster, inertia, outerHeight) options:
 		//xPosition - Horizontal position of the element
@@ -158,10 +240,11 @@
 		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 		$('#welcome').parallax("50%", 0, 0.2, true);
-		$('#setup').parallax("50%", 0, 0.2, true);
-		$('#logging').parallax("50%", 0, 0.2, true);
-		$('#chronicling').parallax("50%", 2750, 0.3, true);
-		$('.section-title').parallax("50%", 0, 0.1, true);
+		$('#setup').parallax("50%", 2000, 0.2, true);
+		$('#logging').parallax("50%", 2000, 0.2, true);
+		$('#chronicling').parallax("50%", 4000, 0.2, true);
+		$('#tips').parallax("50%", 6000, 0.2, true);
+		$('#about').parallax("50%", 9000, 0.2, true);
 	
 	
 	var deck = new $.scrolldeck({
@@ -174,13 +257,14 @@
 	
 			
 
-		deck.controller.animate('.page-number',{duration:500, property: 'margin-bottom', start:200, end: 0, pin:true });
-		
+		/* deck.controller.animate('.img-container ',{delay: 900, duration:100, property: 'opacity', start:0, end: 1 }); */
+
 
 			
 		});
 
 
 	</script>
+
 	</body>	
 </html>
