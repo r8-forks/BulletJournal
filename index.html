@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
 		<link rel="stylesheet" type="text/css" href="css/bulletjournal.css">
+		<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica' rel='stylesheet' type='text/css'>
 
 	</head>
 	
@@ -47,7 +48,7 @@
 			<!-- Modal -->
 			<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
 			
-			<iframe src="http://player.vimeo.com/video/47310129?title=0&amp;byline=0&amp;portrait=0"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			<iframe src="http://player.vimeo.com/video/47310129?title=0&amp;byline=0&amp;portrait=0"  frameborder="0" width='960px' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 		</div>
 </div>
 	</div>
@@ -99,8 +100,6 @@ Indexing your topics provides you the flexibility to organically fill your Bulle
 		</div>		
 	</div>  
 	
-	
-	
 	<div id="logging" class="slide">
 		<h2 class="section-title">The bits and pieces</h2>
 
@@ -128,8 +127,7 @@ Indexing your topics provides you the flexibility to organically fill your Bulle
 			</div>	
 		</div>	
 	</div>
-	
-	
+		
 	<div id="chronicling" class="slide">
 		<h2 class="section-title">Putting it all together</h2>
 		<div class="container">
@@ -194,6 +192,7 @@ Indexing your topics provides you the flexibility to organically fill your Bulle
 			</div>	
 		</div>	
 	</div>
+	
 	<div id="about" class="slide">
 		<h2 class="section-title">A note from your sponsor</h2>
 		<div class="container">
@@ -231,7 +230,20 @@ Indexing your topics provides you the flexibility to organically fill your Bulle
 	<script type="text/javascript">
 		$(document).ready(function () {	
 
+window.onscroll = function() {
 
+    if( window.XMLHttpRequest ) {
+        if (document.documentElement.scrollTop > 1000 || self.pageYOffset > 1000) {
+
+            $('.navbar').slideDown('slow');
+
+        } else if (document.documentElement.scrollTop < 1000 || self.pageYOffset < 1000) {
+
+            $('.navbar').slideUp();
+
+        }
+    }
+}
 			
 				
 		//.parallax(xPosition, adjuster, inertia, outerHeight) options:
