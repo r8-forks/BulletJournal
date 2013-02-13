@@ -2,6 +2,13 @@ body,html{
   height:100%;
 }
 
+::selection {
+	background: #FFFF99; /* Safari */
+	}
+::-moz-selection {
+	background: #FFFF99; /* Firefox */
+}
+
 .VeneerTwo { font-family: VeneerTwo; }
 h1, h2, h3, h5, nav li { 
 	font-family: VeneerTwo!important; 
