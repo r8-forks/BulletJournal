@@ -1,0 +1,181 @@
+<html>
+	<head>
+		<title>Bullet Journal</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+	
+		<script type="text/javascript">
+		$(document).ready(function() {	
+			$('#center h1').click(function(){
+				$("#center").animate({ scrollTop: $('#center h1').offset().top }, 300);
+			});
+			
+			$('#nav li').hover(
+				function(){
+				$(this).stop().animate({borderColor:'#999'}, 'fast')
+				},
+				
+				function(){
+				$(this).stop().animate({borderColor:'#ccc'}, 'fast')	
+			});
+			
+			$('#close').hover(
+				function(){
+				$(this).animate({backgroundColor:'#ddd'}, 'fast')
+				},
+				
+				function(){
+				$(this).animate({backgroundColor:'#eee'}, 'fast')	
+			});
+			
+			$('#open').hover(
+				function(){
+				$(this).animate({backgroundColor:'#aaa'}, 'fast')
+				},
+				
+				function(){
+				$(this).animate({backgroundColor:'#ddd'}, 'fast')	
+			});
+			
+			$('#logo').click(function(){
+				$('#nav').animate({marginLeft:0}, 'fast')
+			/* 	$(this).animate({marginTop:'-200'}, 'fast') */
+		
+			});
+			
+
+			$('#close').click(function(){
+				$('#open').toggle();
+				$('#nav').animate({marginLeft:"-160px"}, 200, "easeOutCirc");
+				$('#nav').css('overflow','hidden');
+			});
+
+		
+			$('#open').click(function(){
+				$('#nav').animate({marginLeft:"0px"});
+				$('#open').toggle();
+				$('#nav').css('overflow','scroll');
+			});
+
+
+		});
+			 
+		</script>
+		
+
+		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		body {font-size: 18px; margin: 0 ; padding: 0; background: #ccc; font-family: sans-serif}
+		#wrapper {width: 100%; background: white; overflow: hidden }
+		#nav {margin-left: -200px;  height: 100%; overflow-y: scroll; top: 0px; float: left; width: 200px; background: #eee}
+		#nav ul{ color: #222;  padding: 20px 20px 0 0; margin: 0 auto 0 auto;width: 120px;  }
+		#nav ul li { padding: 20px; width: 80px; float: left; text-align: center;  border: 1px solid #ccc; background: #e2e2e2; margin: 0px 10px 10px 0px; border-radius: 2px; max-height: 40px; font-size: 14px}	
+		#nav ul li:hover {cursor: pointer}
+		#center { margin: 0 auto 0 auto; padding: 0px; line-height: 1.5em; color: black; background:  z-index: 9; height: 100%; overflow-y: scroll; padding: 0 }
+		#center_content { margin: 0 auto; background: white}
+		#video {width: 100%; background: black; margin: 0 auto 0px auto;  padding: 0px;  z-index: 1; height: 540px  }	
+		.header {font-size: 14px; width: 100%; display: block}
+		.subheader {font-size: 14px; width: 100%;  display: block}
+		#ads {float: right; }
+		#article h1 {text-align: center; padding: 30px 0 0 0; margin: 0}
+		p {padding: 30px}
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+			}
+
+		.video-container iframe,  
+		.video-container object,  
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		#close {float: left; height: 100%; display: block; cursor: pointer; background: #eee; text-indent: -9999px; width: 20px}
+		#open {float:right; height: 100%; display: block; cursor: pointer; background: #ddd; text-indent: -9999px; width: 40px;}
+		#getStarted {display: block; border-radius: 50px; width: 50; height: 50px; position: fixed; background: red; z-index: 99; left:45%; top: 50; padding: 20px}
+
+		</style>
+	</head>
+		
+	<body>
+				<h1 id="logo" style="color:white; text-align:center">Bullet journal</h1>
+
+		<!-- <div id="getStarted"> Get started</div> -->
+
+		<div id="wrapper">	
+		
+			<div id="nav">
+		
+				<span id="close">X </span>
+				<span id="open" style="display:none">V</span>
+				
+				
+				<ul>
+					
+					<li><span class="header">Introduction<span></li>
+					<li><span class="header">Set Up<span></li>
+					<li><span class="header">Bullets<span></li>
+					<li><span class="header">Journal<span></li>
+					<li><span class="header">Calendar<span></li>
+					<li><span class="header">Expenses<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+					<li><span class="header">Topic<span></li>
+	
+
+				</ul>
+			
+			</div>
+
+
+			<div id="center">
+				<div id="center_content">
+				
+		<div class="video-container">
+	<iframe src="http://player.vimeo.com/video/51591015?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=999999" width="1024" height="576" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+
+
+				
+				
+					<h1>Introduction</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis neque nec quam tempor hendrerit. Sed id imperdiet ipsum. Nunc aliquet nunc non ante bibendum faucibus sit amet sed enim. Aenean vel aliquam libero. Cras tincidunt nisl ut quam volutpat sed pellentesque orci rhoncus. Quisque sed erat ac lacus interdum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					
+					
+								<div id="ads">
+				<ul>
+					<li><span class="header">Social<span></li>
+					<li><span class="header">Blog<span></li>	
+					<li><span class="header">About<span></li>
+				</ul>
+			</div>
+					</div>
+			</div>
+	
+		</div>
+							
+
+
+
+	</body>
+</html>
