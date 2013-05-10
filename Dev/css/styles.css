@@ -2,53 +2,144 @@ html, body {margin: 0; padding: 0; height: 100%; width: 100%; background: url('.
   font-family: 'IM Fell DW Pica', serif;}
 
 
+#introduction {background: url('../imgs/bg_header.jpg') center center fixed; margin: 0; padding: 10% ;
+position: relative; background-size: cover; min-height: 100%; display: block; width: 80%; color: white;}
+#wrapper {position: relative;}
+
+
+
 .sectionHeader h1 {text-shadow: 0 0 2px #fff; text-align: center!important; font-size: 160px; color: white; padding: 150px 0}
-.sectionContainer {min-height: 100%;  width: 100%; overflow-x: hidden }
+.sectionContainer {min-height: 100%;  width: 100%; overflow-x: hidden; }
 
-.subsection {height: 1000px; position: relative; font-size: 24px; line-height: 34px; padding: 50px 100px 50px 50px}
+.subsection {height: 1300px; font-size: 24px; line-height: 34px; padding:50px 100px 50px 50px; position: relative;  }
 
 
-#header {min-height: 100%; width: 100%; background: red }
+#scroll-wrapper {margin-left: 220px!important;}
 
-#scroll-wrapper {padding-left: 200px!important}
 
 
 /*Sidenav*/
 
 #brand {background: url('../imgs/logo.jpg') center center no-repeat; height: 34px;
 padding: 20px; display: block; text-indent: -9999px}
-.sidenav { position: fixed; margin: 0; background-color: #f3f1e5; height: 100%; 
+.sidenav { position: absolute; margin: 0; background-color: #f3f1e5; height: 100%; 
   overflow: scroll; width: 220px; }
-.sidenav li {list-style: none; }
+.sidenav li {list-style: none; z-index: 1000;
+}
 .sidenav li a:hover  {background: #e4dfd4!important; color: #191919;}
 .sidenav li a {font-size: 24px; color: #888; text-shadow: 0 0 1px #888; 
   display: block; padding: 10px 20px;}
+/*  .sidenav .share {
+
+position: fixed;
+    bottom: 0;
+    width: 200px;
+    background: #151515;
+    
+}*/
+
+
+/*#scroll-wrapper:after  {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    pointer-events: none;
+    top: auto;
+    background: 
+        linear-gradient(
+            to top, 
+            rgba(243,241,229,1) 0%, 
+            rgba(243,241,229,0) 100%
+        );
+}*/
+
+
+
+
 .nav-sectionHeader a{ font-size: 30px!important;}
 .nav-sectionHeader  {margin: 20px 0 10px 0; }
 
 
 /*bookpage*/
 
-#bookpage {font-family: 'Waiting for the sunrise'; 
-background: url('../imgs/grid.gif'); serif; 
-background-color: #fff; box-shadow: 0px 5px 10px #999; 
- padding: 50px; height: 800px; margin: 0 -600px 0 0; 
- border-top-left-radius:2em;
- border-bottom-left-radius:2em;
- font-size: 18px
+.pageTitle {font-size: 1.5em; margin: 0 0 20px 0; text-decoration: underline;}
+
+.page {
+  font-family: 'Waiting for the sunrise'; 
+  font-size: 18px;
+  background: url('../imgs/grid.gif'); serif; 
+  background-color: #fff; 
+  box-shadow: 0px 5px 10px #999; 
+  padding: 50px;
+  height: 800px; 
+  border-top-left-radius:2em; border-bottom-left-radius:2em;
+  margin: 5% 0!important;  
+  position: relative;
+
+}
+.page ul {margin: 0; padding: 0; list-style: none;}
+.page ul li {margin: 10px -10px;  padding: 2px; display: block; width: 100% }
+.page ul li ul li {margin: 10px 0 10px 50px; padding: 0 0 0 30px;}
+
+.task { float: left; margin: 0 10px; padding: 0 10px; display: block;  height: 20px;background: url('../imgs/icons.png') no-repeat 0 -76px;}
+.taskCheck { float: left; margin: 0 10px; padding: 0 10px; display: block;  height: 20px;background: url('../imgs/icons.png') no-repeat 0 -104px;}
+.event { float: left; margin: 0 10px; padding: 0 10px; display:block;  height: 20px;background: url('../imgs/icons.png') no-repeat 0 -47px;}
+.note { float: left; margin: 0 10px; padding: 0 10px; display: block;  height: 20px;background: url('../imgs/icons.png') no-repeat 0 -26px;}
+.star { float: left; padding: 0; margin: 0 -20px;  display: block; width: 20px; height: 20px;background: url('../imgs/icons.png') no-repeat }
+.page-number {position: absolute; bottom:0; margin: 0 0 50px 0; font-size: 34px;  }
+
+
+#bookpage { margin: 0 -600px 0 0; }
+#bookpage li { display: none }
+
+
+
+#indexpage {margin: 0}
+#indexpage tr {padding: 15px;}
+#indexpage td {padding: 5px;}
+
+#calendar {background: url('../imgs/grid.gif'); 
+    border-top-left-radius:1em; border-top-right-radius:1em;
+  font-family: 'Waiting for the sunrise'; 
+  font-size: 18px;  
+  height: 250px; 
+  overflow: hidden;  
+  box-shadow: 0 -2px 5px #999;
+  margin: 50px 20px ;
+  position: relative
+}
+#calendar .pageTitle {text-align: center;}
+#calendar .calendarPage{border-right: 1px solid #ccc; padding: 40px;}
+#calendar:after  {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    pointer-events: none;
+    top: auto;
+    background: 
+        linear-gradient(
+            to top, 
+            rgba(255,255,255,1) 0%, 
+            rgba(255,255,255,0) 100%
+        );
 }
 
-#bookpage ul {display: none;}
-#bookpage ul li {padding: 10px}
-#bookpage .topic-intro {font-size: 34px; margin: 0 0 20px 0}
-#bookpage .page-number {position: absolute; bottom: 0; margin: 0 0 50px; font-size: 34px}
-
+#calendar ul li {margin: 8px 0px; display: block; width: 100%; padding: 0 0 0 30px }
+#calendar ol li {margin: 10px 0px;   }
 
 /*Typography*/
 
 
-h1, h2, h3, h4, h5, .sidenav li, .btn_next { 
-  font-family: Veneer; 
+h1, h2, h3, h4, h5, .sidenav li, .btn_next, .btn_prev { 
+  font-family: VeneerTwo; 
   font-weight: normal; 
   font-style: normal; 
 
@@ -57,10 +148,7 @@ h1, h2, h3, h4, h5, .sidenav li, .btn_next {
 
 h2 {font-size: 140px; margin: 0 0 50px 0; line-height: 115px;}
 
-
-
-
-
+p {font-size: 20px; line-height: 28px; ; margin: 0 0 20px 0;}
 
 
 .lead {font-size: 36px; line-height: 50px; margin-bottom: 50px}
@@ -68,7 +156,10 @@ h2 {font-size: 140px; margin: 0 0 50px 0; line-height: 115px;}
 /*Other*/
 
 .active {background: #e4dfd4;}
-.btn_next {color: #151515; font-size: 34px; padding: 50px 0 0 0; display: block;  color:  #e4dfd4}
+
+.btn_next {color: #151515; font-size: 34px; padding: 10px 0; display: block;  color: 
+ #e4dfd4; margin: 50px 0; border-top: 1px solid #e4dfd4; }
+.fixed {position: fixed; top: 0}
 .stuck {position: fixed; top: 10%; right: 0;}
 .offset2 {min-width: 200px!important}
 .highlight {background: yellow;}
