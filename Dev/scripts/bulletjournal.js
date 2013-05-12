@@ -3,9 +3,11 @@
 
 $(document).ready(function() {
 
-  $.localScroll({ duration: 1200, easing: 'easeOutQuint', top:'500px'});
+  $.localScroll({ duration: 1200, easing: 'easeOutQuint', top:'500px', offset: 10});
+
+  $.stellar();
   
-  $('.sidenav').scrollspy()
+  $('.sidenav').scrollspy();
 
   
   $('#entries').waypoint(function(direction){
@@ -15,7 +17,7 @@ $(document).ready(function() {
        $("#bookpage").animate ({marginRight: '-=600px'}, 500, 'easeOutQuint').css({'position':'relative', 'top': '10%'})
      }
      $('#bookpage').toggleClass('stuck')
-     $('.topic-intro').delay(1000).fadeToggle().toggleClass('highlight',200)
+     $('.topic-intro').delay(1000).toggleClass('highlight',200)
    },
    {offset: '10%'}
   );
@@ -25,9 +27,14 @@ $(document).ready(function() {
       $('.sidenav').toggleClass('fixed')
     });
 
+  var removeHilight = function(){ $('.page').find('.highlight').removeClass('highlight')}
 
-  $('#bullets').waypoint(function(direction) {
-    // $("#bookpage ul li").fadeToggle(),
+
+
+   $('#bullets')
+
+  .waypoint(function(direction) {
+         removeHilight();
     if (direction == 'down')  $("#bookpage ul li").each(function(index) {
       $(this).delay(200*index).fadeToggle(300);
     })
@@ -36,59 +43,78 @@ $(document).ready(function() {
       $("#bookpage ul li").fadeOut();
     }
 
-    $('.topic-intro, .bullet-note, .bullet-events, .bullet-task').removeClass('highlight',200)
-  }, { offset: 200 });
 
-  $('#tasks').waypoint(function() {
-    $('.bullet-task').toggleClass('highlight',200)
-  }, { offset: 200 });
+  }, { offset: 1 });
 
-  $('#notes').waypoint(function() {
-    $('.bullet-note').toggleClass('highlight',200)
-    $('.bullet-task, .topic-intro, .bullet-events').removeClass('highlight',200)
 
-  }, { offset: 200 });
 
-  $('#events').waypoint(function() {
-    $('.bullet-events').toggleClass('highlight',200)
-    $('.bullet-note, .topic-intro, .bullet-task').removeClass('highlight',200)
 
-  }, { offset: 200 });
+  $('#tasks')
+      .waypoint(function(direction) {
+    if (direction === 'down') {
+      removeHilight();
+    $('.bullet-task').addClass('highlight',200)
+    }
+  })
+  .waypoint(function(direction) {
+    if (direction === 'up') { 
+    removeHilight();
+    $('.bullet-task').addClass('highlight',200)}
+  }, { offset: -100 });
+
+
+  $('#notes')
+    .waypoint(function(direction) {
+    if (direction === 'down') {
+      removeHilight();
+    $('.bullet-note').addClass('highlight',200)
+    }
+  })
+  .waypoint(function(direction) {
+    if (direction === 'up') { 
+    removeHilight();
+    $('.bullet-note').addClass('highlight',200)}
+  }, { offset: -100 });
+
+
+  $('#events')
+    .waypoint(function(direction) {
+    if (direction === 'down') {
+      removeHilight();
+    $('.bullet-events').addClass('highlight',200)
+    }
+  })
+  .waypoint(function(direction) {
+    if (direction === 'up') { 
+    removeHilight();
+    $('.bullet-events').addClass('highlight',200)}
+  }, { offset: 12 });
+
+
+
 
   $('#signifiers').waypoint(function() {
 
-    $('.star').fadeToggle(),
-    $('html').removeClass('highlight',200)
+    $('.star, .explore, .inspiration').fadeToggle(),
+    removeHilight();
+   
   }, { offset: 200 });
 
 
 
   $('#pagenumbers').waypoint(function(direction){
-    if (direction == 'down') $("#bookpage").animate ({marginTop: '-=500px'}, 800, 'easeOutQuint').css({'position':'relative', 'top': '7750px'})
+    if (direction == 'down') $("#bookpage").animate ({marginTop: '-=800px'}, 800, 'easeOutQuint').css({'position':'relative', 'top': '8000px'})
       else {
-       $("#bookpage").animate ({marginTop: '+=500px'}, 500, 'easeOutQuint').css({'position':'fixed', 'top': '10%'})
+       $("#bookpage").animate ({marginTop: '+=800px'}, 800, 'easeOutQuint').css({'position':'fixed', 'top': '10%'})
      }
 
      $('#bookpage .page-number').fadeToggle('slow').toggleClass('highlight')
    });
 
-  $('#index').waypoint(function(direction){
-        // if (direction == 'down') $("#indexpage").animate({marginRight: '+=600px'}, 1200, 'easeOutQuint')
-        // else {
-        //    $("#indexpage").animate ({marginRight: '-=600px'}, 500, 'easeOutQuint').css({'position':'relative', 'top': '10%'})
-        // }
-      });
 
-    // $('#index').waypoint(function(direction){
-    //     if (direction == 'down') $("#bookpage").animate ({marginRight: '-=800px'}, 500, 'easeOutQuint')
-    //     else {
-    //        $("#bookpage").animate ({marginRight: '+=800px'}, 1200, 'easeOutQuint')
-    //     }
-    // }, {offset: 500});
-
-
-
-
+$('.share').click(function(){
+  $('.socialLinks').slideToggle('fast');
+});
 
 
 
