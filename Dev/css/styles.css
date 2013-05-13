@@ -100,7 +100,7 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 
 }
 .page ul {margin: 0; padding: 0; list-style: none;}
-.page ul li {margin: 10px -10px;  padding: 2px; display: block; width: 100% }
+.page ul li {margin: 10px -10px;  padding: 2px; display: block; width: 100%; white-space:nowrap}
 .page ul li ul li {margin: 10px 0 10px 50px; padding: 0 0 0 30px;}
 
 .task { float: left; margin: 0 10px; padding: 0 10px; display: block;  height: 20px;background: url('../imgs/icons.png') no-repeat 0 -76px;}
@@ -159,12 +159,14 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 
 #dailyCalendar, #collectionPage, #indexpage  {margin: 0!important}
 
+#about h3 {padding: 0;}
 #about ul {margin: 0; padding: 0}
 #about ul li  {padding: 5px 0; display: block; font-size: 14px}
 
-#about .social  {padding: 20px 0 70px 0; margin: 50px 0; display: block; border-bottom: 5px solid #151515;}
+#about .social  {padding: 10px 0 70px 0; margin: 0 0 50px 0; display: block; border-bottom: 5px solid #151515;}
 #about .social li {font-size: 34px; float: left; line-height: 42px;display: block; padding: 5px; font-family: VeneerTwo; }
-#about .social li a{  color: #e4dfd4; display: block;    }
+#about .social li a{  color: #e4dfd4; display: block;  -webkit-transition: .2s;  }
+#about .social li a:hover{  color: #151515}
 
 #license {margin: 100px 0 50px 0; font-size: 14px!important}
 
@@ -207,17 +209,17 @@ a:hover {text-decoration: none; color: #000;}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1200px) { 
-    h2 {font-size: 60px; margin: 0 0 50px 0; line-height: 50px} 
+    h2 {font-size: 80px; margin: 0 0 50px 0; line-height: 60px} 
     .subsection {font-size: 18px; line-height: 28px; }
-
+    .span7, {margin: 0; padding:  0 50px 0 20px}
 
   }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 850px) {
 .page {display: none}
-.sidenav { position: relative; }
- h2 {font-size: 70px; margin: 0 0 50px 0; line-height: 50px} 
+.sidenav { position: relative; width: 100% }
+ h2 {font-size: 70px; margin: 0 0 50px 0; line-height: 60px} 
  #scroll-wrapper {margin-left: 0px!important;}
  .subsection {min-height: 100%}
  #brand {background-position: 20px }
@@ -226,7 +228,7 @@ a:hover {text-decoration: none; color: #000;}
 /* Landscape phones and down */
 @media (max-width: 480px) {  
 .page {display: none!important}
-.span8 {width: 100%!important}
+.span8, .span7 {width: 100%!important}
 .subsection {height: 100%}
 #calendar {display: none}
 
