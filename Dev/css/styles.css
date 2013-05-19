@@ -1,31 +1,30 @@
 html, body {margin: 0; padding: 0; height: 100%; width: 100%; background: url('../imgs/bg_light.jpg'); 
   font-family: 'IM Fell DW Pica', serif; }
 
-
-#introduction {background: url('../imgs/bg_header.jpg') fixed; margin: 0; padding: 10% ;
-position: relative; background-size: cover; min-height: 100%; 
-display: block; width: 80%; color: white; z-index: 100}
+#introduction {
+background: url('../imgs/bg_header.jpg') top left no-repeat fixed; 
+margin: 0; 
+padding: 0 ;
+position: relative; 
+background-size: cover; 
+min-height: 100%; 
+width: 100%; 
+color: white; 
+z-index: 100}
 #introduction h2 {text-align: center;}
 #introduction img { margin: 0 0 30px 0;  }
-#introduction #introCopy {max-width: 800px; margin: 5% auto; position: absolute; top: 15%; height: 100%}
+#introduction #introCopy {max-width: 800px; margin: 5% 10%; position: absolute; top: 15%; height: 100%}
 #introduction p {margin: 0}
 #introduction .btn_next {color: white; border: none; font-size: 54px; }
 
-#about {}
-
 #wrapper {position: relative;}
-
-
 
 .sectionHeader h1 {text-shadow: 0 0 2px #fff; text-align: center!important; font-size: 160px; color: white; padding: 150px 0}
 .sectionContainer {min-height: 100%;  width: 100%; overflow-x: hidden; }
 
 .subsection {height: 1300px; font-size: 24px; line-height: 34px; padding:50px 100px 50px 50px; position: relative;  }
 
-
 #scroll-wrapper {margin-left: 220px!important;}
-
-
 
 /*Sidenav*/
 
@@ -76,13 +75,10 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 }
 
 
+.nav-sectionHeader  {margin: 20px 0 10px 20px; font-size: 2.2em; text-shadow: 0 0 1px #141414;}
+.nav-sectionHeader a  {font-size: 1.2em!important;  text-shadow: 0 0 1px #141414;}
 
-
-.nav-sectionHeader a{ font-size: 30px!important;}
-.nav-sectionHeader  {margin: 20px 0 10px 0; }
-
-
-/*bookpage*/
+/* Book Page*/
 
 .pageTitle {font-size: 1.5em; margin: 0 0 20px 0; text-decoration: underline;}
 
@@ -114,11 +110,8 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 
 .page-number {position: absolute; bottom:0; margin: 0 0 50px 0; font-size: 34px;  }
 
-
 #bookpage { margin: 0 -600px 0 0; }
 #bookpage li { display: none }
-
-
 
 #indexpage {margin: 0!important}
 #indexpage tr {padding: 15px;}
@@ -134,6 +127,7 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
   margin: 50px 20px ;
   position: relative
 }
+
 #calendar .pageTitle {text-align: center;}
 #calendar .calendarPage{border-right: 1px solid #ccc; padding: 40px;}
 #calendar:after  {
@@ -157,7 +151,7 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 #calendar ul li {margin: 8px 0px; display: block; width: 100%; padding: 0 0 0 30px }
 #calendar ol li {margin: 10px 0px;   }
 
-#dailyCalendar, #collectionPage, #indexpage  {margin: 0!important}
+#dailyCalendar, #collectionPage, #indexpage  {margin: 5% 0!important}
 
 #about h3 {padding: 0;}
 #about ul {margin: 0; padding: 0}
@@ -170,15 +164,13 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 
 #license {margin: 100px 0 50px 0; font-size: 14px!important}
 
-/*Typography*/
 
+/*Typography*/
 
 h1, h2, h3, h4, h5, .sidenav li, .btn_next, .btn_prev, .socialLink { 
   font-family: VeneerTwo; 
   font-weight: normal; 
   font-style: normal; 
-
-
 }
 
 h2 {font-size: 140px; margin: 0 0 50px 0; line-height: 115px;}

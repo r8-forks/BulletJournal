@@ -20,24 +20,24 @@ $(document).ready(function() {
      $('.topic-intro').delay(1000).toggleClass('highlight',200)
    },
    {offset: '10%'}
-  );
+   );
 
 
-    $('#rapidLogging').waypoint(function(){
-      $('.sidenav').toggleClass('fixed')
-    });
+  $('#rapidLogging').waypoint(function(){
+    $('.sidenav').toggleClass('fixed')
+  });
 
   var removeHilight = function(){ $('.page').find('.highlight').removeClass('highlight')}
 
 
 
-   $('#bullets')
+  $('#bullets')
 
   .waypoint(function(direction) {
-         removeHilight();
-    if (direction == 'down')  $("#bookpage ul li").each(function(index) {
-      $(this).delay(200*index).fadeToggle(300);
-    })
+   removeHilight();
+   if (direction == 'down')  $("#bookpage ul li").each(function(index) {
+    $(this).delay(200*index).fadeToggle(300);
+  })
 
     else {
       $("#bookpage ul li").fadeOut();
@@ -50,45 +50,45 @@ $(document).ready(function() {
 
 
   $('#tasks')
-      .waypoint(function(direction) {
+  .waypoint(function(direction) {
     if (direction === 'down') {
       removeHilight();
-    $('.bullet-task').addClass('highlight',200)
+      $('.bullet-task').addClass('highlight',200)
     }
   })
   .waypoint(function(direction) {
     if (direction === 'up') { 
-    removeHilight();
-    $('.bullet-task').addClass('highlight',200)}
-  }, { offset: -100 });
+      removeHilight();
+      $('.bullet-task').addClass('highlight',200)}
+    }, { offset: -100 });
 
 
   $('#notes')
-    .waypoint(function(direction) {
+  .waypoint(function(direction) {
     if (direction === 'down') {
       removeHilight();
-    $('.bullet-note').addClass('highlight',200)
+      $('.bullet-note').addClass('highlight',200)
     }
   })
   .waypoint(function(direction) {
     if (direction === 'up') { 
-    removeHilight();
-    $('.bullet-note').addClass('highlight',200)}
-  }, { offset: -100 });
+      removeHilight();
+      $('.bullet-note').addClass('highlight',200)}
+    }, { offset: -100 });
 
 
   $('#events')
-    .waypoint(function(direction) {
+  .waypoint(function(direction) {
     if (direction === 'down') {
       removeHilight();
-    $('.bullet-events').addClass('highlight',200)
+      $('.bullet-events').addClass('highlight',200)
     }
   })
   .waypoint(function(direction) {
     if (direction === 'up') { 
-    removeHilight();
-    $('.bullet-events').addClass('highlight',200)}
-  }, { offset: 12 });
+      removeHilight();
+      $('.bullet-events').addClass('highlight',200)}
+    }, { offset: 12 });
 
 
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
     $('.star, .explore, .inspiration').fadeToggle(),
     removeHilight();
-   
+
   }, { offset: 200 });
 
 
@@ -112,9 +112,9 @@ $(document).ready(function() {
    });
 
 
-$('.share').click(function(){
-  $('.socialLinks').slideToggle('fast');
-});
+  $('.share').click(function(){
+    $('.socialLinks').slideToggle('fast');
+  });
 
 
 
@@ -142,7 +142,7 @@ $('.share').click(function(){
 
 
   function scrollToNew () {
-  scrollTop = $(window).scrollTop();
+    scrollTop = $(window).scrollTop();
   $('.subsection').each(function(i, h2){ // loop through article headings
     h2top = $(h2).offset().top; // get article heading top
     if (scrollTop < h2top) { // compare if document is below heading
@@ -152,46 +152,44 @@ $('.share').click(function(){
   });
 }
 
-function scrollToLast () {
-  scrollTop = $(window).scrollTop();
+  function scrollToLast () {
+    scrollTop = $(window).scrollTop();
 
-  var scrollToThis = null;
+    var scrollToThis = null;
 
-  // Find the last element with class 'new' that isn't on-screen:
-  $('.subsection').each(function(i, h2) {
-    h2top = $(h2).offset().top;
-    if (scrollTop > h2top) {
-      // This one's not on-screen - make a note and keep going:
-      scrollToThis = h2;
-    } else {
-      // This one's on-screen - the last one is the one we want:
-      return false;
+    // Find the last element with class 'new' that isn't on-screen:
+    $('.subsection').each(function(i, h2) {
+      h2top = $(h2).offset().top;
+      if (scrollTop > h2top) {
+        // This one's not on-screen - make a note and keep going:
+        scrollToThis = h2;
+      } else {
+        // This one's on-screen - the last one is the one we want:
+        return false;
+      }
+    });
+
+    // If we found an element in the loop above, scroll to it:
+    if(scrollToThis != null) {
+      $.scrollTo(scrollToThis, 800);
     }
-  });
-
-  // If we found an element in the loop above, scroll to it:
-  if(scrollToThis != null) {
-    $.scrollTo(scrollToThis, 800);
   }
-}
 
 
-jQuery(function () {
+  jQuery(function () {
 
-  $("#next").click(scrollToNew);
+    $("#next").click(scrollToNew);
 
-  $(document).keydown(function (evt) {
-    if (evt.keyCode == 40) { // down arrow
-      evt.preventDefault(); // prevents the usual scrolling behaviour
-      scrollToNew(); // scroll to the next new heading instead
-    }else if (evt.keyCode == 38) { // up arrow
-      evt.preventDefault();
-      scrollToLast();
-    }
+    $(document).keydown(function (evt) {
+      if (evt.keyCode == 40) { // down arrow
+        evt.preventDefault(); // prevents the usual scrolling behaviour
+        scrollToNew(); // scroll to the next new heading instead
+      }else if (evt.keyCode == 38) { // up arrow
+        evt.preventDefault();
+        scrollToLast();
+      }
+    });
+
   });
-
-});
-
-
 });
 
