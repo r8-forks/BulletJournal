@@ -49,7 +49,7 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
     width: 164px;
     color: white;
     background: #151515;
-    font-family: Veneer;
+    font-family: VeneerTwo;
     letter-spacing: 31px;
     cursor: pointer;
  
@@ -167,6 +167,15 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 
 /*Typography*/
 
+.VeneerExtras { font-family: VeneerExtras; }
+.VeneerExtras-Italic { font-family: VeneerExtras-Italic; }
+.Veneer-Italic { font-family: Veneer-Italic; }
+.Veneer { font-family: Veneer; }
+.VeneerTwo { font-family: VeneerTwo; }
+.VeneerThree { font-family: VeneerThree; }
+.VeneerThree-Italic { font-family: VeneerThree-Italic; }
+.VeneerTwo-Italic { font-family: VeneerTwo-Italic; }
+
 h1, h2, h3, h4, h5, .sidenav li, .btn_next, .btn_prev, .socialLink { 
   font-family: VeneerTwo; 
   font-weight: normal; 
@@ -183,6 +192,8 @@ a:hover {text-decoration: none; color: #000;}
 
 
 .lead {font-size: 30px; line-height: 40px; margin-bottom: 50px}
+
+
 
 /*Other*/
 
@@ -223,5 +234,9 @@ a:hover {text-decoration: none; color: #000;}
 .span8, .span7 {width: 100%!important}
 .subsection {height: 100%}
 #calendar {display: none}
+#introduction {background: url('../imgs/bg_header.jpg') left top no-repeat fixed;     
+-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;  }
 
 }
