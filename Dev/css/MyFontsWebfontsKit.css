@@ -46,29 +46,5 @@
  * © 2012 Bitstream Inc
 */
 
-
-
-  
- @font-face {font-family: 'VeneerExtras';src: url('webfonts/242A1F_0_0.eot');src: url('webfonts/242A1F_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/242A1F_0_0.woff') format('woff'),url('webfonts/242A1F_0_0.ttf') format('truetype');}
- 
-  
- @font-face {font-family: 'VeneerExtras-Italic';src: url('webfonts/242A1F_1_0.eot');src: url('webfonts/242A1F_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/242A1F_1_0.woff') format('woff'),url('webfonts/242A1F_1_0.ttf') format('truetype');}
- 
-  
- @font-face {font-family: 'Veneer-Italic';src: url('webfonts/242A1F_2_0.eot');src: url('webfonts/242A1F_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/242A1F_2_0.woff') format('woff'),url('webfonts/242A1F_2_0.ttf') format('truetype');}
- 
-  
- @font-face {font-family: 'Veneer';src: url('webfonts/242A1F_3_0.eot');src: url('webfonts/242A1F_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/242A1F_3_0.woff') format('woff'),url('webfonts/242A1F_3_0.ttf') format('truetype');}
- 
-  
- @font-face {font-family: 'VeneerTwo';src: url('../webfonts/242A1F_4_0.eot');src: url('../webfonts/242A1F_4_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/242A1F_4_0.woff') format('woff'),url('../webfonts/242A1F_4_0.ttf') format('truetype');}
- 
-  
- @font-face {font-family: 'VeneerThree';src: url('webfonts/242A1F_5_0.eot');src: url('webfonts/242A1F_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/242A1F_5_0.woff') format('woff'),url('webfonts/242A1F_5_0.ttf') format('truetype');}
- 
-  
- @font-face {font-family: 'VeneerThree-Italic';src: url('webfonts/242A1F_6_0.eot');src: url('webfonts/242A1F_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/242A1F_6_0.woff') format('woff'),url('webfonts/242A1F_6_0.ttf') format('truetype');}
- 
-  
- @font-face {font-family: 'VeneerTwo-Italic';src: url('webfonts/242A1F_7_0.eot');src: url('webfonts/242A1F_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/242A1F_7_0.woff') format('woff'),url('webfonts/242A1F_7_0.ttf') format('truetype');}
+ @font-face {font-family: 'VeneerTwo';src: url('../webfonts/242A1F_4_0.eot');src: url('../webfonts/242A1F_4_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/242A1F_4_0.woff') format('woff')}
  
