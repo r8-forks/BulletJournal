@@ -1,5 +1,5 @@
 html, body {margin: 0; padding: 0; height: 100%; width: 100%; background: url('../imgs/bg_light.jpg'); 
-  font-family: 'IM Fell DW Pica', serif; }
+  font-family: 'IM Fell DW Pica' }
 
 #introduction {
 background: url('../imgs/bg_header.jpg') top left no-repeat fixed; 
@@ -17,7 +17,8 @@ z-index: 100; }
 #introduction p {margin: 0}
 #introduction .btn_next {color: white; border: none; font-size: 54px; }
 
-#wrapper {position: relative; width: 100%; overflow-x: hidden; }
+#wrapper { position: relative; width: 100%; height: 100%; overflow-x:hidden  }
+
 
 .sectionHeader h1 {text-shadow: 0 0 2px #fff; text-align: center!important; font-size: 160px; color: white; padding: 150px 0}
 .sectionContainer {min-height: 100%;  width: 100%; overflow-x: hidden; }
@@ -177,7 +178,7 @@ padding: 45px 20px 0 0; display: block; text-indent: -9999px; margin: 0}
 .VeneerTwo-Italic { font-family: VeneerTwo-Italic; }
 
 h1, h2, h3, h4, h5, .sidenav li, .btn_next, .btn_prev, .socialLink { 
-  font-family: VeneerTwo; 
+  font-family: VeneerTwo, sans-sarif; 
   font-weight: normal; 
   font-style: normal; 
 }

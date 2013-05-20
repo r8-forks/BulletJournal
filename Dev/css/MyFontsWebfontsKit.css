@@ -46,5 +46,10 @@
  * © 2012 Bitstream Inc
 */
 
- @font-face {font-family: 'VeneerTwo';src: url('../webfonts/242A1F_4_0.eot');src: url('../webfonts/242A1F_4_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/242A1F_4_0.woff') format('woff')}
+ @font-face {font-family: 'VeneerTwo';
+ src: url('../webfonts/242A1F_4_0.eot');
+ src: url('../webfonts/242A1F_4_0.eot?#iefix') 
+ format('embedded-opentype'),url('../webfonts/242A1F_4_0.woff') 
+ format('woff'),
+ url('../webfonts/242A1F_4_0.ttf') format('truetype');}
  
